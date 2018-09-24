@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+</head>
+<body>
+<form action="/mp/generic_handler.py" method="post" name="myform">
+    <!-- input -->
+    <label for="id_subject">Subject</label>
+    <input type="text" name="subject" id="id_subject">
+
+    <!-- radio button -->
+    <p>
+        <label for="id_apple">Apple</label>
+        <input id="id_apple" type="radio" name="fruit" value="apple">
+        <label for="id_mandarin">Mandarin</label>
+        <input id="id_mandarin" type="radio" name="fruit" value="mandarin">
+    </p>
+
+    <!-- select -->
+    <p>
+        <label for="id_quantity">Quantity</label>
+        <select id="id_quantity" name="quantity">
+            <option id="id_select_1" name="select_1" value="one">1</option>
+            <option id="id_select_2" name="select_2" value="two">2</option>
+        </select>
+    </p>
+
+    <!-- checkbox -->
+    <p>
+        <label for="id_takeout">Takeout?</label>
+        <input type="checkbox" id="id_takeout" name="takeout" value="takeout_yes">
+    </p>
+
+    <!-- hidden -->
+    <input type="hidden" id="id_hidden_value" name="hidden_valude" value="Oh, hidden value">
+    
+    <p><input type="submit"></p>
+</form>
+
+</body>
+</html>
